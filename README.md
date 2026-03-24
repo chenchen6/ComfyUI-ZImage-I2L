@@ -4,7 +4,15 @@ image to lora for z-image-turbo in ComfyUI
 參考
 DiffSynth-Studio https://github.com/modelscope/DiffSynth-Studio
 
-## MODEL's location 模型存放位置 ##
+## Installation 安裝方式
+Clone this repository into your ComfyUI custom nodes folder:
+```
+cd ComfyUI/custom_nodes
+git clone https://github.com/chenchen6/ComfyUI-ZImage-I2L.git
+
+
+
+## MODEL's location 模型存放位置
 The directory structure after download:
 ```
     ~/models/
