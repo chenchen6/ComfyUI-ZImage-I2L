@@ -21,9 +21,10 @@ git clone https://github.com/chenchen6/ComfyUI-ZImage-I2L.git
 
 ## MODEL
 Models will be automatically downloaded from ModelScope on first run
-Or download from huggingface before fun the pipline
+Or downloaded from Huggingface before run the workflow
 * recommend downloading from huggingface if not in China region
 
+Download links from Huggingface
 [Tongyi-MAI/Z-Image/transformer](https://huggingface.co/Tongyi-MAI/Z-Image/tree/main/transformer)
 [Tongyi-MAI/Z-Image-Turbo](https://huggingface.co/Tongyi-MAI/Z-Image-Turbo/tree/main/)
 [DiffSynth-Studio/General-Image-Encoders](https://huggingface.co/DiffSynth-Studio/General-Image-Encoders/tree/main)
