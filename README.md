@@ -7,7 +7,8 @@ DiffSynth-Studio https://github.com/modelscope/DiffSynth-Studio
 <details>
 <summary>MODEL's location模型存放位置</summary>
 The directory structure after download:
-```~/models/
+```
+    ~/models/
     ├── Tongyi-MAI/
     │   ├── Z-Image/
     │   │   └── transformer/*.safetensors
@@ -21,3 +22,4 @@ The directory structure after download:
         │   └── DINOv3-7B/model.safetensors
         └── Z-Image-i2L/
             └── model.safetensors
+    ```
