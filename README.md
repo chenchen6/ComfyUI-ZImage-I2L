@@ -4,8 +4,7 @@ image to lora for z-image-turbo in ComfyUI
 參考
 DiffSynth-Studio https://github.com/modelscope/DiffSynth-Studio
 
-
-<summary>MODEL's location 模型存放位置<summary>
+MODEL's location 模型存放位置
 The directory structure after download:
 ```
     ~/models/
