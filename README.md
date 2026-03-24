@@ -19,7 +19,7 @@ pip install -r requirements.txt
 | :--- | :--- |
 | Z-Image Pipeline Loader |load Z-Image Image-to-LoRA pipeline|
 | Z-Image Image-to-LoRA |main node for training lora|
-| Z-Image LoRA Apply (Instant) |replace the original lora model|
+| Z-Image LoRA Apply (Instant) |replace the original "lora" node|
 
 !!If "Z-Image LoRA Apply (Instant)" doesn't work, disconnect the pipeline, and change to original one.
 
