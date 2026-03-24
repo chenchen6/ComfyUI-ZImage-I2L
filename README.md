@@ -23,8 +23,9 @@ Or download from huggingface before fun the pipline
 * recommend downloading from huggingface if not in China region
 
 [Tongyi-MAI/Z-Image/transformer](https://huggingface.co/Tongyi-MAI/Z-Image/tree/main/transformer)
-
-
+[Tongyi-MAI/Z-Image-Turbo](https://huggingface.co/Tongyi-MAI/Z-Image-Turbo/tree/main/)
+[DiffSynth-Studio/General-Image-Encoders](https://huggingface.co/DiffSynth-Studio/General-Image-Encoders/tree/main)
+[DiffSynth-Studio/Z-Image-i2L](https://huggingface.co/DiffSynth-Studio/Z-Image-i2L/tree/main)
 
 
 ## MODEL's location 模型存放位置
