@@ -22,9 +22,6 @@ except ImportError:
     DIFFSYNTH_AVAILABLE = False
     print("\n[Z-Image] 錯誤：找不到 DiffSynth 庫！請確保已安裝 diffsynth-studio。\n")
 
-# ==========================================
-# 1. 載入器：處理 Transformer + Turbo Tokenizer 混用
-# ==========================================
 class ZImage_I2L_Loader:
     @classmethod
     def INPUT_TYPES(s):
@@ -59,7 +56,6 @@ class ZImage_I2L_Loader:
 
         print(f"\n[Z-Image] 正在從本地目錄載入模型架構: {folder_paths.models_dir}")
 
-        # 這裡會自動對應到 models/Tongyi-MAI/Z-Image... 等路徑
         pipe = ZImagePipeline.from_pretrained(
             torch_dtype=dtype,
             device="cuda",
@@ -82,9 +78,6 @@ class ZImage_I2L_Loader:
         print("✅ [Z-Image] Pipeline 載入完成！")
         return (pipe,)
 
-# ==========================================
-# 2. 生成器：將圖片轉化為 LoRA 權重並存檔
-# ==========================================
 class ZImage_I2L_Generator:
     @classmethod
     def INPUT_TYPES(s):
@@ -118,7 +111,6 @@ class ZImage_I2L_Generator:
             embs = ZImageUnit_Image2LoRAEncode().process(pipeline, image2lora_images=pil_images)
             lora_data = ZImageUnit_Image2LoRADecode().process(pipeline, **embs)["lora"]
         
-        # 產生唯一檔名並存檔到 models/loras
         file_uuid = uuid.uuid4().hex[:4]
         file_name = f"{lora_name}_{file_uuid}.safetensors"
         save_path = os.path.join(folder_paths.models_dir, "loras", file_name)
@@ -129,9 +121,6 @@ class ZImage_I2L_Generator:
         print(f"💾 [Z-Image] LoRA 已即時儲存至: {save_path}")
         return (file_name, save_path)
 
-# ==========================================
-# 3. 套用器：免重新整理，直接從路徑載入 LoRA
-# ==========================================
 class ZImage_Lora_Apply:
     @classmethod
     def INPUT_TYPES(s):
@@ -157,7 +146,6 @@ class ZImage_Lora_Apply:
             print(f"❌ 檔案路徑不存在: {lora_path}")
             return (model, clip)
 
-        # 直接讀取檔案並 Patch 到模型上
         print(f"📥 [Z-Image] 正在即時掛載動態 LoRA: {os.path.basename(lora_path)}")
         lora_weights = comfy.utils.load_torch_file(lora_path, safe_load=True)
         
@@ -167,7 +155,6 @@ class ZImage_Lora_Apply:
 
         return (model_lora, clip_lora)
 
-# --- 註冊節點 ---
 NODE_CLASS_MAPPINGS = {
     "ZImage_I2L_Loader": ZImage_I2L_Loader,
     "ZImage_I2L_Generator": ZImage_I2L_Generator,
