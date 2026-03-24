@@ -13,9 +13,9 @@ git clone https://github.com/chenchen6/ComfyUI-ZImage-I2L.git
 ## NODE
 | node | description|
 | :--- | :--- |
-| Z-Image Pipeline Loader |pipe to Z-Image Image-to-LoRA|
+| Z-Image Pipeline Loader |load Z-Image Image-to-LoRA pipeline|
 | Z-Image Image-to-LoRA |main node for training lora|
-| Z-Image LoRA Apply (Instant) |connect lora instant, don't need to refresh web page|
+| Z-Image LoRA Apply (Instant) |use lora loader instant, don't need to refresh web page|
 
 ## MODEL's location 模型存放位置
 The directory structure after download:
