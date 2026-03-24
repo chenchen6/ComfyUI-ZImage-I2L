@@ -15,7 +15,8 @@ git clone https://github.com/chenchen6/ComfyUI-ZImage-I2L.git
 | :--- | :--- |
 | Z-Image Pipeline Loader |load Z-Image Image-to-LoRA pipeline|
 | Z-Image Image-to-LoRA |main node for training lora|
-
+| Z-Image LoRA Apply (Instant) |replace the original lora model|
+!!If "Z-Image LoRA Apply (Instant)" don't work, disconnect the pipeline, and chage to original one.
 
 ## MODEL
 Models will be automatically downloaded from ModelScope on first run
