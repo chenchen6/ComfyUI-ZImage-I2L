@@ -10,7 +10,11 @@ Clone this repository into your ComfyUI custom nodes folder:
 cd ComfyUI/custom_nodes
 git clone https://github.com/chenchen6/ComfyUI-ZImage-I2L.git
 ```
-
+## NODE
+| node | 
+| Z-Image Pipeline Loader |pipe to Z-Image Image-to-LoRA|
+| Z-Image Image-to-LoRA |main node for training lora|
+| Z-Image LoRA Apply (Instant) |connect lora instant, don't need to refresh web page|
 
 ## MODEL's location 模型存放位置
 The directory structure after download:
