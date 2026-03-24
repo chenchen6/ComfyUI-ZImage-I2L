@@ -13,7 +13,7 @@ git clone https://github.com/chenchen6/ComfyUI-ZImage-I2L.git
 ## NODE
 | node | description|
 | :--- | :--- |
-| [Tongyi-MAI/Z-Image/transformer](https://huggingface.co/Tongyi-MAI/Z-Image/tree/main/transformer)|
+| Z-Image Pipeline Loader |load Z-Image Image-to-LoRA pipeline|
 | Z-Image Image-to-LoRA |main node for training lora|
 
 
@@ -23,7 +23,7 @@ Or download from huggingface before fun the pipline
 * recommend downloading from huggingface if not in China region
 | model | description |
 | :--- | :--- |
-| Z-Image Pipeline Loader |load Z-Image Image-to-LoRA pipeline|
+| [Tongyi-MAI/Z-Image/transformer](https://huggingface.co/Tongyi-MAI/Z-Image/tree/main/transformer)|
 | Z-Image Image-to-LoRA |main node for training lora|
 
 
