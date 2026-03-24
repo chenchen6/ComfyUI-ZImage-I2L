@@ -10,6 +10,10 @@ Clone this repository into your ComfyUI custom nodes folder:
 cd ComfyUI/custom_nodes
 git clone https://github.com/chenchen6/ComfyUI-ZImage-I2L.git
 ```
+```
+cd ComfyUI/ComfyUI-ZImage-I2L
+pip install -r requirements.txt
+```
 ## NODE
 | node | description|
 | :--- | :--- |
