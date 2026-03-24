@@ -22,4 +22,3 @@ The directory structure after download:
         │   └── DINOv3-7B/model.safetensors
         └── Z-Image-i2L/
             └── model.safetensors
-    ```
