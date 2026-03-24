@@ -41,11 +41,11 @@ The directory structure after download:
     ~/models/
     ├── Tongyi-MAI/
     │   ├── Z-Image/
-    │   │   └── transformer/*.safetensors
+    │   │   └── transformer/.safetensors, json
     │   └── Z-Image-Turbo/
-    │       ├── text_encoder/*.safetensors
-    │       ├── vae/diffusion_pytorch_model.safetensors
-    │       └── tokenizer/
+    │       ├── text_encoder/.safetensors, json
+    │       ├── vae/diffusion_pytorch_model.safetensors, json
+    │       └── tokenizer/josn, txt
     └── DiffSynth-Studio/
         ├── General-Image-Encoders/
         │   ├── SigLIP2-G384/model.safetensors
